@@ -26,12 +26,6 @@ public class Noticia implements Serializable {
 
     @Column(name = "hora")
     private String hora;
-    
-/*
-    variavel:=DateTostr(date); pega a data
-    variavel:=Timetostr(time); pega a hora;
-    
-    */
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
