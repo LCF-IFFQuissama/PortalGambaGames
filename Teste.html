@@ -7,14 +7,18 @@
         <title>Teste</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/gamba.css">
+        <link href="css/gamba.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Fonte de Ícones -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body cz-shortcut-listen="true">
 
         <!-- Menu -->
         <div class="bs-component">
             <nav class="navbar navbar-default">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
@@ -23,7 +27,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a href="#">
-                            <img src="imagens/Small.png" class="navbar-brand img-responsive">
+                            <img src="imagens/brand.png" class="navbar-brand img-responsive">
                         </a>
                     </div>
 
@@ -31,40 +35,119 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active">
                                 <a href="#">
-                                    Link
-                                    <span class="sr-only">(current)</span>
+                                    Início
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Link</a>
+                                <a href="#">
+                                	Sobre
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                	Equipe
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                	Jogos
+                                </a>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                	Tutoriais
+                                	<span class="caret"></span>
+                            	</a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
+                                    <li><a href="#">Categoria 1</a></li>
+                                    <li><a href="#">Categoria 2</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">Categoria 3</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">One more separated link</a></li>
+                                    <li><a href="#">Categoria 4</a></li>
                                 </ul>
                             </li>
-                        </ul>
-                        <!--form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form-->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Link</a></li>
+                            <li>
+                                <a href="#" class="">
+                                	Login
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
+        <section id="main-content">
+        	<div class="container-fluid">
+        		<div class="col-md-7 post-list">
+        			<div class="bs-component">
+	                  	<div class="panel panel-default">
+		                  	<img src="http://placehold.it/800x400" class="img-responsive">
+		                    <div class="panel-heading">
+	                    		<h3>Título do Post</h3>
+	                    		<div class="post-meta">
+	                    			<i class="fa fa-user-o"></i>
+	                    			<span>Nome do Autor</span>
+	                    			<i class="fa fa-calendar-o"></i>
+	                    			<span>Data de Postagem</span>
+
+	                    		</div>
+		                    </div>
+		                    <div class="panel-body">
+		                      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada nec quam et facilisis. Donec ut ultricies tellus. Nullam sapien sapien, placerat quis vulputate quis, ornare eu enim. Fusce vel eros ac neque interdum rhoncus. Proin faucibus ex id scelerisque sodales. Praesent efficitur nunc sit amet efficitur auctor. In hac habitasse platea dictumst. Integer vulputate, turpis quis tincidunt venenatis, felis lacus dignissim mauris, sed ultrices lectus ligula et elit. Ut lobortis pharetra metus et facilisis.
+		                    </div>
+                  		</div>
+
+                  		<hr>
+
+	                  	<div class="panel panel-default">
+		                  	<img src="http://placehold.it/800x400" class="img-responsive">
+		                    <div class="panel-heading">
+	                    		<h3>Título do Post</h3>
+	                    		<div class="post-meta">
+	                    			<i class="fa fa-user-o"></i>
+	                    			<span>Nome do Autor</span>
+	                    			<i class="fa fa-calendar-o"></i>
+	                    			<span>Data de Postagem</span>
+
+	                    		</div>
+		                    </div>
+		                    <div class="panel-body">
+		                      	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada nec quam et facilisis. Donec ut ultricies tellus. Nullam sapien sapien, placerat quis vulputate quis, ornare eu enim. Fusce vel eros ac neque interdum rhoncus. Proin faucibus ex id scelerisque sodales. Praesent efficitur nunc sit amet efficitur auctor. In hac habitasse platea dictumst. Integer vulputate, turpis quis tincidunt venenatis, felis lacus dignissim mauris, sed ultrices lectus ligula et elit. Ut lobortis pharetra metus et facilisis.
+		                    </div>
+                  		</div>
+
+                  		<hr>
+
+              		</div>
+        		</div>
+        		<div class="col-md-4 col-md-offset-1">
+        			
+        			<div class="bs-component">
+	        			<div class="panel panel-default">
+		                    <div class="panel-body">
+		                        <form class="navbar-form form-group" role="search">
+		                            <div class="form-group">
+		                                <input type="text" class="form-control" placeholder="Pesquise no site">
+		                            </div>
+		                            <button type="submit" class="btn btn-default">
+		                            	Submit
+	                            	</button>
+		                        </form>
+		                    </div>
+	                  	</div>
+	                  	<div class="panel panel-default">
+		                  	
+                  		</div>
+
+                  		<hr>
+
+              		</div>
+        		</div>
+        	</div>
+        </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

@@ -1,0 +1,42 @@
+.img-responsive {
+	margin: auto !important;
+}
+#main-content {
+	padding: 10px 25px;
+}
+.post-list {
+	padding-top: 15px;
+	background-color: #f2f2f2;
+}
+	.post-list img {
+		width: 100%;
+	}
+	.post-list hr {
+		padding: 0;
+		border: none;
+		border-top: solid 3px #666666;
+		text-align: center;
+		margin: 30px 10px;
+	}
+	.post-list hr:after,
+	.post-list hr:after {
+		content: "\f11b";
+		font-family: FontAwesome;
+		display: inline-block;
+		position: relative;
+		top: -1.04em;
+		font-size: 2em;
+		padding: 0 0.25em;
+		background-color: #F2F2F2;
+	}
+
+.post-meta {
+	font-size: 12px;
+	color: #686868;
+}
+	.post-meta i {
+		margin-right: 3px;
+	}
+	.post-meta span {
+		margin-right: 15px;
+	}
