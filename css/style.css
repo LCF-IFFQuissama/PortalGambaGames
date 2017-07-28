@@ -1,3 +1,7 @@
+hr {
+	margin: 0 0 10px;
+	padding: 0px;
+}
 .img-responsive {
 	margin: auto !important;
 }
@@ -5,8 +9,8 @@
 	padding: 10px 25px;
 }
 .post-list {
-	padding-top: 15px;
-	background-color: #f2f2f2;
+	margin-top: 15px;
+	text-align: justify;
 }
 	.post-list img {
 		width: 100%;
@@ -27,7 +31,13 @@
 		top: -1.04em;
 		font-size: 2em;
 		padding: 0 0.25em;
-		background-color: #F2F2F2;
+		background-color: #FFFFFF;
+	}
+
+	@media(max-width: 710px) {
+		.post-list {
+			margin: 0 -40px;
+		}
 	}
 
 .post-meta {
@@ -39,4 +49,61 @@
 	}
 	.post-meta span {
 		margin-right: 15px;
+	}
+.sidebar {
+	margin-top: 15px;
+}
+	.sidebar form {
+		padding: 10px 0 0 0;
+	}
+	.sidebar input {
+		padding-right: 10px;
+	}
+
+	@media(max-width: 710px) {
+		.sidebar {
+			margin: 35px -35px;
+		}
+	}
+.widget {
+	padding: 15px 0px;
+}
+	.widget .panel-heading {
+		text-align: center;	
+		background-color: transparent;
+	}
+	.widget .panel-heading h3 {
+		margin: 0px;
+		background-color: transparent;
+	}
+	.widget .panel-body p {
+		margin-top: 20px;
+		text-align: justify;
+	}
+	.widget .panel-body img {
+		width: 60%;
+	}
+		@media(min-width: 992px) {
+			.widget .panel-body img {
+				padding-top: 25px;
+				width: 100% !important;
+			}
+		}
+.btn-icon {
+	padding: 11px 20px;
+}
+.more-posts {
+	margin: 0px 10px 40px 10px;
+}
+.post-text {
+	font-size: 17px;
+}
+.post-title {
+	text-align: left;
+}
+	@media(max-width: 768px)
+	{
+		.post-title {
+			text-align: center;
+		}
 	}
