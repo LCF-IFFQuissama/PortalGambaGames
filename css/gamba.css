@@ -3347,7 +3347,7 @@ fieldset[disabled] .btn-warning.focus {
 }
 .btn-danger {
   color: #ffffff;
-  background-color: #e51c23;
+  background-color: #c63a02;
   border-color: transparent;
 }
 .btn-danger:focus,
@@ -7237,8 +7237,8 @@ input[type=number]:focus,
 [type=email].form-control:focus,
 [type=tel].form-control:focus,
 [contenteditable].form-control:focus {
-  -webkit-box-shadow: inset 0 -2px 0 #2196f3;
-  box-shadow: inset 0 -2px 0 #2196f3;
+  -webkit-box-shadow: inset 0 -2px 0 #FDCA0D;
+  box-shadow: inset 0 -2px 0 #FDCA0D;
 }
 textarea[disabled],
 textarea.form-control[disabled],
