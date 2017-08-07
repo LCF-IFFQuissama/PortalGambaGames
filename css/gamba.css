@@ -3528,9 +3528,9 @@ tbody.collapse.in {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
+  min-width: 200px;
+  padding: 0px 0;
+  margin: 0px 0 0 2px;
   list-style: none;
   font-size: 13px;
   text-align: left;
@@ -3543,19 +3543,18 @@ tbody.collapse.in {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
 }
+  @media(max-width: 768px){
+    .dropdown-menu {
+      margin: 10px 0 0px 12px;
+    }
+  }
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-.dropdown-menu .divider {
-  height: 1px;
-  margin: 10.5px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
 .dropdown-menu > li > a {
   display: block;
-  padding: 3px 20px;
+  padding: 12px 20px;
   clear: both;
   font-weight: normal;
   line-height: 1.846;
@@ -4346,7 +4345,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
+    padding: 8px 15px 8px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
     line-height: 23px;

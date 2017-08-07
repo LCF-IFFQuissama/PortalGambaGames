@@ -181,6 +181,28 @@ p > a {
 		margin-top: 0px;
 		text-align: center;
 	}
+
+.team {
+	text-align: center;
+}
+	.team h1 {
+		font-size: 45px
+	}
+	.team h3 {
+		font-size: 20px;
+		margin-bottom: 70px
+	}
+	.team hr {
+		width: 60%;
+		margin: 30px auto;
+	}
+	.team img {
+		width: 70%;
+	}
+	.team .col-sm-4 {
+		margin-bottom: 60px;
+	}
+
 .social-share {
 	width: 100%;
 	margin: auto;
@@ -293,7 +315,7 @@ footer {
 	  font-weight:700;
 	}
 	footer .post-preview {
-		margin-top: 0
+		margin-top: 0;
 	}
 	footer .post-preview p {
 		font-size:12px;
