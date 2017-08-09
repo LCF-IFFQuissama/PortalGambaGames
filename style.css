@@ -138,7 +138,8 @@ p > a {
 	padding: 11px 20px;
 }
 .more-posts {
-	margin: 0px 10px 40px 10px;
+	margin: 0px;
+	font-size: 12px;
 }
 .post-text {
 	font-size: 17px;
@@ -186,14 +187,14 @@ p > a {
 	text-align: center;
 }
 	.team h1 {
-		font-size: 45px
+		font-size: 40px
 	}
 	.team h3 {
 		font-size: 20px;
 		margin-bottom: 70px
 	}
 	.team hr {
-		width: 60%;
+		width: 100%;
 		margin: 30px auto;
 	}
 	.team img {
