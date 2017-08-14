@@ -9,8 +9,8 @@
 		License: GPLv2
 	*/
 
-	function criando_avaliacao_filmes() {
-		register_post_type( 'avaliacao_filmes',
+	function adicionando_jogos() {
+		register_post_type( 'jogos',
 			array(
 			'labels' => array(
 			'name' => 'Jogos',
@@ -30,9 +30,9 @@
 			),
 
 			'public' => true,
-			'menu_position' => 3,
+			'menu_position' => 15,
 			'rewrite' => false,
-			'supports' => array( 'title', 'editor', 'comentários', 'thumbnail', 'custom-fields', 'thumbnail' ),
+			'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'excerpt' ),
 			'taxonomies' => array( '' ),
 			'menu_icon' => 'dashicons-lightbulb', //Icone adicionado do Developer Resources: Dashicons
 			'has_archive' => true,
@@ -43,5 +43,25 @@
 
 	}
 
-	add_action( 'init', 'adicionando_jogo');
+	function include_template_function( $template_path ) {
+	    
+	    if ( get_post_type() == 'jogos' ) {
+	        if ( is_single() ) {
+	            // verifica se o modelo de página existe no thema,
+	            // senão utiliza o arquivo do plugin
+	            if ( $theme_file = locate_template( array ( '/jogos.php' ) ) ) {
+	                $template_path = $theme_file;
+	            } else {
+	                $template_path = plugin_dir_path( __FILE__ ) . '/single-jogos.php';
+	            }
+	        }
+	 
+	    }
+	    return $template_path;
+	  
+	}
+
+	add_action( 'init', 'adicionando_jogos');
+
+	add_filter( 'template_include', 'include_template_function', 1 );
 ?>

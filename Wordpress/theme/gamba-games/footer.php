@@ -8,7 +8,7 @@
 			      	<div class="col-md-4 col-sm-6">
 			        	<div class="logo">
 			        		Gambá <span style="font-weight: 200">Games</span>
-			        		<img src="imagens/Joystick Inverse.png" class="img-responsive" style="width: 30px; display: inline-block;">
+			        		<img src="<?php bloginfo( 'template_url' ); ?>/imagens/Joystick Inverse.png" class="img-responsive" style="width: 30px; display: inline-block;">
 		        		</div>
 			        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum arcu id faucibus semper. Suspendisse malesuada iaculis quam eu ullamcorper.</p>
 			        	<p><i class="fa fa-map-pin"></i> Av. Amílcar Pereira da Silva, 727 - Piteiras, Quissamã - RJ, 28735-000</p>
