@@ -1,0 +1,432 @@
+/*
+	Theme Name: Gamba Games
+	Theme URI: https://www.lucascraveiropaes.com/
+	Description: Gambá Games - Laboratório de Desenvolvimento de Jogos
+	Author: Lucas Craveiro Paes
+	Author URI: https://www.lucascraveiropaes.com/
+*/
+
+hr {
+	margin: 0 0 10px;
+	padding: 0px;
+	display: block;
+}
+hr {
+	padding: 0;
+	border: none;
+	border-top: solid 3px #666666;
+	text-align: center;
+	margin: 15px 10px;
+}
+hr:after {
+	content: "\f11b";
+	font-family: FontAwesome;
+	display: inline-block;
+	position: relative;
+	top: -1.00em;
+	font-size: 2em;
+	padding: 0 0.25em;
+	background-color: #FFFFFF;
+}
+.hr-simple {
+	padding: 0;
+	border: none;
+	border-top: solid 1px #666666;
+	text-align: center;
+	margin: 5px 5px;
+}
+.hr-simple:after {
+	content: none;
+	background-color: transparent;
+}
+p > a {
+	color: #FDCA0D;
+}
+.btn-secondary {
+	background-color: #BC960A;
+	color: #fff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+	background-color: #d6aa08;
+	color: #fff;
+}
+.btn-share {
+	background-color: #d6aa08;
+	color: #fff;
+}
+.btn-share:hover,
+.btn-share:focus {
+	background-color: #d7bb09;
+	color: #fff;
+}
+.img-responsive {
+	margin: auto !important;
+}
+#main-content {
+	padding: 10px 25px;
+}
+.preview img {
+	width: 100%;
+}
+.post {
+	margin-top: 15px;
+	text-align: justify;
+}
+	.post p {
+		font-size: 17px;
+	}
+	.post hr {
+		margin: 30px 10px;
+	}
+	.post hr:after {
+		background-color: #FFFFFF;
+	}
+
+	@media(max-width: 710px) {
+		.post {
+			margin: 0 -40px;
+		}
+	}
+
+.post-meta {
+	font-size: 12px;
+	color: #686868;
+}
+	.post-meta i {
+		margin-right: 3px;
+	}
+	.post-meta span {
+		margin-right: 15px;
+	}
+.sidebar {
+	margin-top: 15px;
+}
+	.sidebar form {
+		padding: 10px 0 0 0;
+	}
+	.sidebar input {
+		padding-right: 10px;
+	}
+
+	@media(max-width: 710px) {
+		.sidebar {
+			margin: 35px -35px;
+		}
+	}
+.widget {
+	padding: 0px 15px;
+}
+	.widget a:hover {
+	    background-color: #f0f0f0;
+	}
+	.widget .panel-heading {
+		text-align: center;	
+		background-color: transparent;
+	}
+	.widget .panel-heading h3 {
+		margin: 0px;
+		background-color: transparent;
+	}
+	.widget .panel-body {
+	}
+	.widget .panel-body h4 {
+		font-size: 19px;
+		margin-top: 0px;
+	}
+	.widget .panel-body img {
+		width: 60%;
+	}
+		@media(min-width: 992px) {
+			.widget .panel-body img {
+				width: 100% !important;
+			}
+		}
+.btn-icon {
+	padding: 11px 20px;
+}
+.more-posts {
+	margin: 0px;
+	font-size: 12px;
+}
+.post-text {
+	font-size: 17px;
+}
+	.post-text a {
+		color: #f2c007;
+	}
+	.post-text a:hover {
+		color: #BC960A;
+		text-decoration: none;
+	}
+.post-title {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+	.post-title h2 {
+		margin-bottom: 20px;
+	}
+
+.category-header {
+	text-align: center;
+}
+.post-preview {
+	margin-top: 60px;
+}
+.game-list {
+	margin-bottom: 100px;
+}
+	.game-list .game-header {
+		text-align: center;
+	}
+	.game-list .game-preview {
+		margin-top: 60px;
+	}
+	.game-list .game-preview h3 {
+		margin-top: 0px;
+	}
+	.game-list .game-preview h4 {
+		margin-top: 0px;
+		text-align: center;
+	}
+
+.team {
+	text-align: center;
+}
+	.team h1 {
+		font-size: 40px
+	}
+	.team h3 {
+		font-size: 20px;
+		margin-bottom: 70px
+	}
+	.team hr {
+		width: 100%;
+		margin: 30px auto;
+	}
+	.team img {
+		width: 70%;
+	}
+	.team .col-sm-4 {
+		margin-bottom: 60px;
+	}
+
+.social-share {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.social-share a {
+	width: 70px;
+	height: 60px;
+	padding: 10px 15px;
+	font-size: 18px;
+	margin: 10px 10px;
+}
+.social-share a i {
+	font-weight: 90px;
+}
+	.btn-facebook {
+		background-color: #3B5998;
+		color: #fff;
+	}
+	.btn-facebook:hover {
+		background-color: #fff;
+		color: #3B5998;
+	}
+	.btn-twitter {
+		background-color: #00ACED;
+		color: #fff;
+	}
+	.btn-twitter:hover {
+		background-color: #fff;
+		color: #00ACED;
+	}
+	.btn-google-plus {
+		background-color: #C32F10;
+		color: #fff;
+	}
+	.btn-google-plus:hover {
+		background-color: #fff;
+		color: #C32F10;
+	}
+	.btn-linkedin {
+		background-color: #0a8ed8;
+		color: #fff;
+	}
+	.btn-linkedin:hover {
+		background-color: #ffffff;
+		color: #0a8ed8;
+	}
+	.btn-email {
+		background-color: #D34D40;
+		color: #ffffff;
+	}
+	.btn-email:hover {
+		background-color: #ffffff;
+		color: #D34D40;
+	}
+
+/* Footer */
+footer {
+  background-color:#0c1a1e;
+  min-height:350px;
+}
+	footer h6 {
+		font-size:21px;
+		font-weight:700;
+		color:#d9d6d6;
+		margin-bottom:22px;
+	}
+	footer a {
+	  transition: color 0.2s linear 0s, background 0.2s linear 0s;
+	  color: #cecece;
+	}
+	footer a:hover,
+	footer a:active,
+	footer a:focus {
+	  color: #ffffff;
+	  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	  text-decoration: none;
+	}
+	footer p {
+	  color:#cecece;
+	  font-size:12px !important;
+	  margin-bottom:15px;
+	  text-align: justify;
+	}
+	footer p i {
+	  width:20px;
+	  color:#999;
+	}
+	footer ul {
+	  list-style-type:none;
+	  padding-left:0px;
+	  margin-left:2px;
+	}
+	footer ul li {
+	  line-height:29px;
+	  font-size:12px;
+	}
+	footer ul li a {
+	  transition: color 0.2s linear 0s, background 0.2s linear 0s;
+	  color: #a0a3a4;
+	}
+	footer .row {
+	  margin-top:50px;
+	  padding:0 36px;
+	}
+	footer .logo {
+	  margin-bottom:10px;
+	  font-size:25px; 
+	  color:#fff; 
+	  font-weight:700;
+	}
+	footer .post-preview {
+		margin-top: 0;
+	}
+	footer .post-preview p {
+		font-size:12px;
+		color:#cecece;
+		line-height:20px;
+	}
+	footer .post-preview p span {
+		display:block;
+		color:#8f8f8f;
+	}
+	.copyright {
+		min-height:40px;
+		background-color:#000000;
+	}
+	.copyright p {
+		text-align:center;
+		color:#FFF;
+		padding:10px 0;
+		margin-bottom:0px;
+	}
+	.copyright a {
+		color: #C69D03;
+		text-decoration: none;
+	}
+	.copyright a:hover {
+		color: #FDCA0D;
+		text-decoration: none;
+	}
+
+/* Ícones de Redes Sociais */
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoEmail:hover {
+	background-color:#D34D40;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-network li {
+	display: block;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
