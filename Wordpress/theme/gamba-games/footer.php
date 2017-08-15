@@ -24,31 +24,33 @@
 							<li><a href="#">João Gambá</a></li>
 							<li><a href="#">Livro do Barão</a></li>
 							<li><a href="#">IFF - Campus Quissamã</a></li>
-							<li><a href="#">Lero Lero</a></li>
-							<li><a href="#">Lero Lero</a></li>
 				        </ul>
 			      	</div>
 			      	<div class="col-md-3 col-sm-6 paddingtop-bottom">
 						<h6 class="heading7">POSTS RECENTES</h6>
 						<div class="post-preview">
-							<p>
-								<a href="single.html">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-								</a>
-								<span>01/08/2017</span>
-							</p>
-							<p>
-								<a href="single.html">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-								</a>
-								<span>01/08/2017</span>
-							</p>
-							<p>
-								<a href="single.html">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-								</a>
-								<span>01/08/2017</span>
-							</p>
+			            	<?php
+								$i = 0;
+								$args=array(
+									'post_type' => 'post',
+                                    'orderby' => 'date',
+                                    'order' => 'DESC',
+                                    'showposts' => 4
+                                );
+			            		$query = new WP_Query( $args ); 
+
+			            		while($query->have_posts()) : $query->the_post();
+			            	?>
+								<p>
+									<a href="<?php the_permalink() ?>">
+										<?php the_title(); ?>
+									</a>
+									<?php the_date('d/m/Y', '<span>', '</span>'); ?>
+								</p>
+			            	<?php
+			            		endwhile;
+								wp_reset_postdata();
+			            	?>
 						</div>
 					</div>
 			      	<div class="col-md-3 col-sm-6 paddingtop-bottom">

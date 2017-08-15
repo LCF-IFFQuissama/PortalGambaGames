@@ -1,5 +1,5 @@
 
-<div class="col-lg-4 sidebar">
+<div class="col-lg-4 visible-lg sidebar">
 	<div class="row">
   		<div class="col-sm-6 col-md-12 col-xs-12">
 			<div class="bs-component">
@@ -19,53 +19,50 @@
               	</div>
       		</div>
       	</div>
-		<div class="col-lg-12 visible-lg">
+		<div class="col-lg-12">
           	<div class="panel panel-default widget">
                 <div class="panel-heading">
                 	<h3>Veja também</h3>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-12">
-	                    <a href="single.html">
-		                    <div class="panel-body">
-		                    	<div class="col-md-4">
-		                    		<img src="http://placehold.it/100x100" class="img-responsive">
-		                    	</div>
-		                    	<div class="col-md-8">
-		                    		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-		                    	</div>
-		                    </div>
-	                    </a>
-	                    <hr class="hr-simple">
-                	</div>
-                	
-                    <div class="col-lg-12">
-	                    <a href="single.html">
-		                    <div class="panel-body">
-		                    	<div class="col-md-4">
-		                    		<img src="http://placehold.it/100x100" class="img-responsive">
-		                    	</div>
-		                    	<div class="col-md-8">
-		                    		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-		                    	</div>
-		                    </div>
-	                    </a>
-	                    <hr class="hr-simple">
-                	</div>
-                	
-                    <div class="col-lg-12">
-	                    <a href="single.html">
-		                    <div class="panel-body">
-		                    	<div class="col-md-4">
-		                    		<img src="http://placehold.it/100x100" class="img-responsive">
-		                    	</div>
-		                    	<div class="col-md-8">
-		                    		<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-		                    	</div>
-		                    </div>
-	                    </a>
-                	</div>
+            	<?php
+					$i = 0;
+            		$query = new WP_Query( 'post_type=jogos' ); 
+
+            		while($query->have_posts()) : $query->the_post();
+            	?>
+	                    <div class="col-lg-12">
+					  		<?php
+					  			if($i > 0)
+					  				echo '<hr class="hr-simple">';
+					  		?>
+		                    <a href="<?php the_permalink() ?>">
+			                    <div class="panel-body">
+			                    	<div class="col-md-4">
+				                        <?php
+				                            if ( has_post_thumbnail() ) {
+			                        	?>
+				                                <a href="<?php the_permalink() ?>" class="widget-link">
+				                                    <?php the_post_thumbnail() ?>
+				                                </a>
+				                        <?php   
+			                                }
+				                        ?>
+			                    	</div>
+			                    	<div class="col-md-8">
+		                                <a href="<?php the_permalink() ?>" style="text-decoration: none">
+		                                    <h4>Jogo: <?php the_title(); ?></h4>
+		                                </a>
+			                    	</div>
+			                    </div>
+		                    </a>
+	                	</div>
+	                	<?php $i++; ?>
+            	<?php
+            		endwhile;
+					wp_reset_postdata();
+            	?>
                 </div>
       		</div>
   		</div>

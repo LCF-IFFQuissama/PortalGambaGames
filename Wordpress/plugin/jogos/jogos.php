@@ -31,7 +31,7 @@
 
 			'public' => true,
 			'menu_position' => 15,
-			'rewrite' => false,
+			'rewrite' => array( 'slug' => 'jogos' ),
 			'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'excerpt' ),
 			'taxonomies' => array( '' ),
 			'menu_icon' => 'dashicons-lightbulb', //Icone adicionado do Developer Resources: Dashicons
@@ -49,7 +49,7 @@
 	        if ( is_single() ) {
 	            // verifica se o modelo de página existe no thema,
 	            // senão utiliza o arquivo do plugin
-	            if ( $theme_file = locate_template( array ( '/jogos.php' ) ) ) {
+	            if ( $theme_file = locate_template( array ( '/single-jogos.php' ) ) ) {
 	                $template_path = $theme_file;
 	            } else {
 	                $template_path = plugin_dir_path( __FILE__ ) . '/single-jogos.php';

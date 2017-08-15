@@ -4,6 +4,12 @@
     $size = strlen($address);
 
     $url = substr($address, 0, $size-4);
+
+    function UrlAtual(){
+        $dominio= $_SERVER['HTTP_HOST'];
+        $url = "http://" . $dominio. $_SERVER['REQUEST_URI'];
+        return $url;
+    }
 ?>
 
 <html lang="en">
@@ -16,11 +22,7 @@
 
         <title>
             <?php
-                if(wp_title('') == "")
-                    bloginfo( 'name' );
-                else {
-                    wp_title(''); echo " - "; bloginfo( 'name' );
-                }
+                wp_title('-', 'true', 'right');  bloginfo( 'name' );
             ?> 
         </title>
 
@@ -74,24 +76,19 @@
                                 </a>
                             </li>
                             <li class="dropdown">
-                                <a href="category.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 	Tutoriais
                                 	<span class="caret"></span>
                             	</a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                    	<a href="category.html">Categoria 1</a>
-                                	</li>
-                                    <li>
-                                    	<a href="category.html">Categoria 2</a>
-                                	</li>
-                                    <li>
-                                    	<a href="category.html">Categoria 3</a>
-                                	</li>
-                                    <li>
-                                    	<a href="category.html">Categoria 4</a>
-                                	</li>
+                                    <?php 
+                                        wp_list_categories( array(
+                                                'orderby' => 'name',
+                                                'title_li' => ''
+                                            ) 
+                                        );
+                                    ?>                                    
                                 </ul>
                             </li>
                         </ul>

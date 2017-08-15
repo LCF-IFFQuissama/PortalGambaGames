@@ -207,6 +207,8 @@ p > a {
 	}
 	.team img {
 		width: 70%;
+		margin: auto;
+		border-radius: 50%;
 	}
 	.team .col-sm-4 {
 		margin-bottom: 60px;
