@@ -1,3 +1,20 @@
+/* Global Styles */
+
+body {
+  color: #5a5a5a;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+i {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
 /* Menu Icon */
 .menu-icon {
     position: fixed;
@@ -66,7 +83,7 @@
 
 .navbar-content {
     position: relative;
-    top: 25%;
+    top: 20%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -91,11 +108,257 @@
 
 /* Post List */
 
-.post-list {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 40px;
+.post-item {
+    padding-left: 3%;
+    padding-right: 3%;
 }
-    @media() {
-        
+    .post-item a {
+        color: #5A5A5A;
+    }
+    .post-item a:hover {
+        color: #000;
+        text-decoration: none;
+    }
+.post-list {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    .post-list p {
+        text-align: justify;
+    }
+.title-box {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
+    .title-box hr {
+        background: #5A5A5A;
+        height: 1px;
+        width: 90%;
+        margin-top: -1.2em;
+    }
+    .title-box h3 {
+        background: #FFF;
+        padding: 5px 30px;
+        margin: auto;
+        z-index: 1;
+    }
+
+.game-list {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 30px;
+}
+    .game-list {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+/* Carousel */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* Featurettes */
+section.featurette {
+  padding-bottom: 80px;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color:#0c1a1e;
+  min-height:350px;
+  padding-top: 5px;
+  margin-top: 80px;
+}
+    footer h6 {
+        font-size:21px;
+        font-weight:700;
+        color:#d9d6d6;
+        margin-bottom:22px;
+    }
+    footer a {
+      transition: color 0.2s linear 0s, background 0.2s linear 0s;
+      color: #cecece;
+    }
+    footer a:hover,
+    footer a:active,
+    footer a:focus {
+      color: #ffffff;
+      box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+    footer p {
+      color:#cecece;
+      font-size:12px !important;
+      margin-bottom:15px;
+      text-align: justify;
+    }
+    footer p i {
+      width:20px;
+      color:#999;
+    }
+    footer ul {
+      list-style-type:none;
+      padding-left:0px;
+      margin-left:2px;
+    }
+    footer ul li {
+      line-height:29px;
+      font-size:12px;
+    }
+    footer ul li a {
+      transition: color 0.2s linear 0s, background 0.2s linear 0s;
+      color: #a0a3a4;
+    }
+    footer .row {
+      margin-top: 30px;
+      padding:0 15px;
+    }
+    footer .container-fluid {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    footer .logo {
+      margin-bottom:10px;
+      font-size:25px; 
+      color:#fff; 
+      font-weight:700;
+    }
+    footer .post-preview {
+        margin-top: 0;
+    }
+    footer .post-preview p {
+        font-size:12px;
+        color:#cecece;
+        line-height:20px;
+    }
+    footer .post-preview p span {
+        display:block;
+        color:#8f8f8f;
+    }
+    .copyright {
+        min-height:40px;
+        background-color:#000000;
+    }
+    .copyright p {
+        text-align:center;
+        color:#FFF;
+        padding:10px 0;
+        margin-bottom:0px;
+    }
+    .copyright a {
+        color: #C69D03;
+        text-decoration: none;
+    }
+    .copyright a:hover {
+        color: #FDCA0D;
+        text-decoration: none;
+    }
+
+/* Ícones de Redes Sociais */
+
+    ul.social-network {
+        list-style: none;
+        display: inline;
+        margin-left:0 !important;
+        padding: 0;
+    }
+    ul.social-network li {
+        display: inline;
+        margin: 0 5px;
+    }
+
+    /* footer social icons */
+    .social-network a.icoFacebook:hover {
+        background-color:#3B5998;
+    }
+    .social-network a.icoTwitter:hover {
+        background-color:#33ccff;
+    }
+    .social-network a.icoGoogle:hover {
+        background-color:#BD3518;
+    }
+    .social-network a.icoEmail:hover {
+        background-color:#D34D40;
+    }
+    .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+    .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+        color:#fff;
+    }
+    a.socialIcon:hover, .socialHoverClass {
+        color:#44BCDD;
+    }
+
+    .social-network li {
+        display: block;
+    }
+
+    .social-circle li a {
+        display:inline-block;
+        position:relative;
+        margin:0 auto 0 auto;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        border-radius:50%;
+        text-align:center;
+        width: 50px;
+        height: 50px;
+        font-size:20px;
+    }
+    .social-circle li i {
+        margin:0;
+        line-height:50px;
+        text-align: center;
+    }
+
+    .social-circle li a:hover i, .triggeredHover {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .social-circle i {
+        color: #fff;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        transition: all 0.8s;
     }
