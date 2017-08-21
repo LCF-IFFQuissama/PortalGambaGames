@@ -62,10 +62,12 @@ i {
 }
 
 #navbar.open {
-    width: 100%;
+    width: 40%;
 }
 #navbar {
     width: 0%;
+}
+.opacity-body {
 }
 
 .navbar {  
@@ -102,8 +104,15 @@ i {
     color: #f1f1f1;
 }
 
+@media(max-width: 700px) {
+    #navbar.open {
+        width: 100%;
+    }
+}
 @media screen and (max-height: 450px) {
-    .navbar a {font-size: 20px}
+    .navbar a {
+        font-size: 20px
+    }
 }
 
 /* Post List */
@@ -114,6 +123,7 @@ i {
 }
     .post-item a {
         color: #5A5A5A;
+        transition: .5s ease;
     }
     .post-item a:hover {
         color: #000;
@@ -192,12 +202,96 @@ section.featurette {
   letter-spacing: -.05rem;
 }
 
+/* Overlay Effect */
+
+.overlay {
+    position: relative;
+}
+
+.overlay-image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay-content {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.overlay:hover .overlay-image {
+    opacity: 0.5;
+}
+
+.overlay:hover .overlay-content {
+    opacity: 1;
+}
+
+.overlay a {
+    color: #FFF;
+    padding: 10px 15px 12px;
+    font-size: 20px;
+}
+.overlay a:hover {
+    color: #FFF;
+}
+
+/* Float Social Button Share*/
+.float-buttons {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    margin-top: 20vh;
+}
+.float-buttons a {
+    float: right;
+    display: block;
+    transition: 0.3s;
+    padding: 18px 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.float-buttons a:hover {
+    width: 55px;
+}
+
+#facebook {
+    background-color: #3b5999;
+}
+
+#linkedin {
+    background-color: #0077B5;
+}
+
+#google-plus {
+    background-color: #dd4b39;
+}
+
+#twitter {
+    background-color: #55acee;
+}
+
+#whatsapp {
+    background-color: #25D366;
+}
 
 
 /* Footer */
 
 footer {
-  background-color:#0c1a1e;
+  background-color: #2d2d2d;
   min-height:350px;
   padding-top: 5px;
   margin-top: 80px;
