@@ -3,25 +3,23 @@
     <head>
         <style>
             .float-buttons {
-                width: 100px;
                 position: absolute;
-                right: 0;
-                margin-top: 15vh;
+                margin-top: 13vh;
             }
             .float-buttons a {
-                float: right;
                 display: block;
                 transition: 0.3s;
-                padding: 18px 15px;
-                width: 30px;
+                padding: 20px;
+                width: 100%;
                 text-align: center;
                 text-decoration: none;
                 font-size: 20px;
-                color: white;
+                color: #FFF;
             }
 
             .float-buttons a:hover {
-                width: 55px;
+                width: 140%;
+                color: #FFF;
             }
 
             #facebook {
@@ -55,22 +53,13 @@
                 float: right;
                 right: 0;
             }
-            .other-posts {
-                position: fixed;
-                top: 60vh;
-                width: 100%;
-            }
-                .post-brief * {
-                    display: inline-block;
-                }
-                .post-brief i {
-                    font-size: 50px;
-                    font-weight: 800;
                    
         </style>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     </head>
     <body style="margin: 0">
 
@@ -94,58 +83,65 @@
 
 
         <div class="other-posts">
-            <!--div class="post-brief left">
-                <a href="#">
-                    <h3>Título do post</h3>
-                    <h5>Lero lero lero lero lero</h5>
-                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div class="post-brief right">
-                <a href="#">
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    <h3>Título do post</h3>
-                    <h5>Lero lero lero lero lero</h5>
-                </a>                
-            </div-->
             <div class="post-brief">
-                <a href="#" class="left" id="about">
+                <a href="#" class="left">
                     <h3>Título do post</h3>
-                    <h5>Lero lero lero lero lero</h5>
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="right" id="blog">Blog</a>
+                <a href="#" class="right">
+                    <h3>Título do post</h3>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
 
         <style>
+            .other-posts {
+                position: fixed;
+                top: 65vh;
+                width: 100%;
+            }
             .post-brief a {
                 transition: 0.3s;
                 padding: 15px;
-                width: 200px;
+                width: 280px;
                 text-decoration: none;
                 font-size: 20px;
                 color: white;
+                background-color: #777777;
             }
                 .post-brief a * {
                     display: inline-block;
                 }
+                .post-brief a h3 {
+                    padding: 10px;
+                }
                 .post-brief a i {
                     font-size: 50px;
                     font-weight: 800;
+                    padding-left: 10px;
+                    padding-right: 10px;
                 }
             .post-brief a.left {
-                margin-left: -80px;
+                margin-left: -215px;
             }
 
-            .post-briefa.left:hover {
+	            .post-brief a.left i {
+                    float: right;
+	            }
+
+            .post-brief a.left:hover {
                 margin-left: 0px;
             }
 
             .post-brief a.right {
-                margin-right: -80px;
+                margin-right: -215px;
                 text-align: right;
             }
+
+	            .post-brief a.right i {
+                    float: left;
+	            }
 
             .post-brief a.right:hover {
                 margin-right: 0px;
