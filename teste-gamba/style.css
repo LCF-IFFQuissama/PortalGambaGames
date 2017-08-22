@@ -369,6 +369,21 @@ section.featurette {
     margin-right: 0px;
 }
 
+/* Post */
+
+
+.post {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+    .post p {
+        text-align: justify;
+        font-size: 23px;
+    }
+    .post img {
+        width: 100%;
+        margin: auto;
+    }
 
 /* Footer */
 
