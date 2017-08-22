@@ -250,6 +250,7 @@ section.featurette {
 .float-buttons {
     position: fixed;
     margin-top: 5vh;
+    z-index: 500;
 }
 .float-buttons a {
     display: block;
@@ -266,6 +267,33 @@ section.featurette {
     width: 130%;
     color: #FFF;
 }
+
+    @media(max-width: 575px) {
+        .float-buttons {
+            bottom: 0px;
+            width: 100%;
+            margin-left: 1%;
+        }
+
+        .float-buttons a {
+            display: inline-block;
+            width: 19%;
+        }
+
+        .other-posts {
+            display: none;
+        }
+        .float-buttons a:hover {
+            width: 19%;
+            background-color: rgba(0,0,0,0.7) !important;
+        }
+    }
+
+    @media (max-width: 915px), (max-height: 660px){
+        .other-posts {
+            display: none;
+        }
+    }
 
 #facebook {
     background-color: #3b5999;
@@ -291,7 +319,7 @@ section.featurette {
     position: fixed;
     top: 70vh;
     width: 100%;
-    z-index: 1000;
+    z-index: 500;
 }
 .post-brief a {
     transition: 0.3s;
@@ -307,6 +335,8 @@ section.featurette {
     }
     .post-brief a h3 {
         padding: 10px;
+        margin: 0px;
+        font-size: 25px
     }
     .post-brief a i {
         font-size: 50px;
@@ -315,7 +345,7 @@ section.featurette {
         padding-right: 10px;
     }
 .post-brief a.left {
-    margin-left: -258px;
+    margin-left: -257px;
 }
 
     .post-brief a.left i {
@@ -327,7 +357,7 @@ section.featurette {
 }
 
 .post-brief a.right {
-    margin-right: -258px;
+    margin-right: -257px;
     text-align: right;
 }
 
