@@ -4,6 +4,15 @@ body {
   color: #5a5a5a;
 }
 
+header {
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .left {
     float: left;
     left: 0;
@@ -64,7 +73,7 @@ i {
 }
 
 #navbar.open {
-    width: 40%;
+    width: 30%;
 }
 #navbar {
     width: 0%;
@@ -97,6 +106,7 @@ i {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
+    font-weight: 500;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -249,22 +259,21 @@ section.featurette {
 /* Float Social Button Share*/
 .float-buttons {
     position: fixed;
-    margin-top: 5vh;
+    margin-top: 35vh;
     z-index: 500;
 }
 .float-buttons a {
     display: block;
     transition: 0.3s;
-    padding: 20px;
-    width: 90%;
+    padding: 15px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     color: #FFF;
 }
-
 .float-buttons a:hover {
-    width: 130%;
+    width: 140%;
     color: #FFF;
 }
 
@@ -272,19 +281,19 @@ section.featurette {
         .float-buttons {
             bottom: 0px;
             width: 100%;
-            margin-left: 1%;
+            margin-left: 4%;
         }
 
         .float-buttons a {
             display: inline-block;
-            width: 19%;
+            width: 22%;
         }
 
         .other-posts {
             display: none;
         }
         .float-buttons a:hover {
-            width: 19%;
+            width: 22%;
             background-color: rgba(0,0,0,0.7) !important;
         }
     }
@@ -315,60 +324,6 @@ section.featurette {
     background-color: #25D366;
 }
 
-.other-posts {
-    position: fixed;
-    top: 70vh;
-    width: 100%;
-    z-index: 500;
-}
-.post-brief a {
-    transition: 0.3s;
-    padding: 15px;
-    width: 325px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    background-color: #777777;
-}
-    .post-brief a * {
-        display: inline-block;
-    }
-    .post-brief a h3 {
-        padding: 10px;
-        margin: 0px;
-        font-size: 25px
-    }
-    .post-brief a i {
-        font-size: 50px;
-        font-weight: 800;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-.post-brief a.left {
-    margin-left: -257px;
-}
-
-    .post-brief a.left i {
-        float: right;
-    }
-
-.post-brief a.left:hover {
-    margin-left: 0px;
-}
-
-.post-brief a.right {
-    margin-right: -257px;
-    text-align: right;
-}
-
-    .post-brief a.right i {
-        float: left;
-    }
-
-.post-brief a.right:hover {
-    margin-right: 0px;
-}
-
 /* Post */
 
 
@@ -377,12 +332,33 @@ section.featurette {
     padding-right: 5%;
 }
     .post p {
-        text-align: justify;
-        font-size: 23px;
+        text-align: left;
+        font-size: 25px;
+        line-height: 45px;
     }
     .post img {
         width: 100%;
-        margin: auto;
+        margin: 20px auto 40px;
+    }
+    .post h3 {
+        font-size: 45px;
+        font-weight: 600;
+        margin: 50px auto 30px;
+    }
+    .post h4 {
+        font-size: 35px;
+        font-weight: 600;
+        margin: 30px auto;
+    }
+    .post ul,
+    .post ol {
+        padding: auto auto auto 10px;
+    }
+    .post ul li,
+    .post ol li {
+        text-align: justify;
+        font-size: 25px;
+        line-height: 45px;
     }
 
 /* Footer */
